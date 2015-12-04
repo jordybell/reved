@@ -1,0 +1,394 @@
+/*NOTICE: If you're going to implement this code into your website. Remember to delete the CSS section at the bottom under the title "Other Helpers (Optional)" as these could interfere with your websites styles sheet. */
+
+/*
+=================
+===Row Styles====
+=================
+*/
+.cost_calc_row-1 {
+    width:49%;
+}
+
+.cost_calc_row-2{
+    float: left;
+    margin-left: 0px;
+    margin-top: 10px;
+    clear: none;
+    width: 15.6%;
+    margin-right: 1%;
+}
+
+.cost_calc_row-3 {
+	width: 24%;
+	margin-top: 10px;
+	margin-right: 0.5%;
+}
+
+.cost_calc_row-4 {
+    width: 24%;
+    margin-right: 0.5%;
+    margin-top: 10px;
+}
+
+/*
+======================
+=====Core Styles======
+======================
+*/
+.cost_calc_calculate {
+    background-color: transparent;
+    border: 2px solid rgb(97, 109, 215)!important;
+    color: rgb(97, 109, 215);
+
+    font-size: 18px;
+    padding: 15px;
+	cursor: pointer;
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px!important;
+    border-left-width: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
+.cost_calc_calculate:hover {
+    background-color: rgb(97, 109, 215);
+	color: white;
+}
+
+.cost_calc_active{
+	background-color: rgb(97, 109, 215)!important;
+    color: rgb(255, 255, 255)!important;
+
+	-webkit-box-shadow: inset 2px 0px 26px 2px rgba(67, 20, 137, 0.45); -moz-box-shadow: inset 2px 0px 26px 2px rgba(67, 20, 137,1);
+	box-shadow: inset 2px 0px 26px 2px rgba(67, 20, 137, 0.45);
+	border-bottom: 0px!important;
+	padding-bottom: 19px;
+}
+/*
+===========================
+==Calculation / breakdown==
+===========================
+*/
+
+#cost_calc_original_price {
+	font-size: 24px;
+	text-decoration: line-through;
+}
+
+#cost_calc_breakdown_container {
+    float: left;
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgb(215, 215, 215);
+    margin-top: 22px;
+}
+
+.cost_calc_heading {
+    float: left;
+    font-size: 1.5em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(139, 139, 139);
+    margin-right: 0%;
+    margin-bottom: 20px;
+}
+
+#cost_calc_total_cost {
+    float: left;
+    font-size: 3em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color:rgb(197, 80, 127);
+    margin-right: 0%;
+    margin-bottom: 20px;
+}
+
+#cost_calc_breakdown_container .cost_calc_sub-heading {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(83, 83, 83);
+    margin-right: 0%;
+    margin-bottom: 10px;
+}
+
+#cost_calc_breakdown_item {
+    float: left;
+    font-size: 1em;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    /* line-height: 1em; */
+    line-height: 14px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    min-height: 0px;
+    color: rgb(154, 154, 154);
+    margin-right: 0%;
+	margin-bottom:10px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#cost_calc_breakdown_price {
+    margin-top: 0px;
+    float: right;
+    text-align: right;
+    width: 50%;
+    color: rgb(197, 80, 127);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+#cost_calc_breakdown {
+    float: left;
+    height: 14px;
+    margin-left: 0px;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0%;
+    min-width: 0px;
+	height: auto;
+}
+
+.cost_calc_button {
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    min-height: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 80, 127);
+    padding: 15px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: none;
+    float: left;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    border:none;
+	cursor: pointer;
+    border-radius: 6px;
+}
+
+.cost_calc_button:hover {
+    -webkit-box-shadow: inset 1px 0px 26px 1px rgba(142, 51, 127, 0.45); -moz-box-shadow: inset 1px 0px 26px 1px rgba(142, 51, 127,1); box-shadow: inset 1px 0px 26px 1px rgba(142, 51, 127, 0.45);
+}
+
+#cost_calc_clear_calculation {
+	float: left;
+	clear: both;
+	width: 120px;
+	color: #fff;
+	cursor:pointer;
+	display: none;
+    margin-top: 20px;
+}
+
+#cost_calc_info {
+	/* float: right; */
+	width: 43%;
+	margin-top: 20px;
+	line-height: 29px;
+	font-size: 14px;
+	color: rgb(155, 155, 155);
+	display: none;
+}
+
+#cost_calc_day_cost {
+    font-size: 17px;
+}
+
+#cost_calc_monthly {
+    font-size: 17px;
+}
+
+/*
+======================
+=====Checkout Page====
+======================
+*/
+.cost_calc_quote_summary {
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+    box-sizing: border-box;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(123, 123, 123);
+    font-family: helvetica;
+    clear: both;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.cost_calc_item_name {
+    float: left;
+    width: 50%;
+    padding-bottom: 5px; border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.cost_calc_item_price {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-weight: 800;
+    color: rgb(14, 152, 125);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.cost_calc_checkout_form {
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+    box-sizing: border-box;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(123, 123, 123);
+    font-family: 'Novecentosanswide light';
+    clear: both;
+    border-radius: 10px;
+}
+
+.cost_calc_breakdown_total {
+    float: right;
+    font-size: 28px;
+    color: rgb(197, 80, 127);
+    font-weight: 600;
+}
+
+.cost_calc_form_information label {
+    clear: both;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.cost_calc_form_information input {
+    width: 96%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.cost_calc_terms {
+    width: 450px;
+    float: left;
+    margin-top: 3px;
+}
+
+.cost_calc_terms_checkbox {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.cost_calc_terms_checkbox input[type='checkbox'] {
+    float: left;
+    width: 20px;
+}
+
+.cost_calc_cost_container {
+    font-size: 30px;
+    color: rgb(14, 152, 125);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cost_calc_total_cost_container{
+    float: left;
+
+    width: 100%;
+    font-size: 28px;
+    color: rgb(14, 152, 125);
+    margin-top: 10px;
+}
+
+/*Simple Validate required message styles (optional)*/
+.SV_validate_form_message {
+    color: rgb(208, 0, 0);
+    top: 0px;
+    right: 19px;
+    font-size: 14px;
+    position: absolute;
+}
+
+/*
+=======================================
+====Other Helpers (Example Styles)=====
+=======================================
+These may interfer with your website styles, these are only here to support the demo. Remove this section before integrating the plugin with your website
+(if you're using the default styles)
+*/
+
+
+.h3form {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    font-family: 'Novecentosanswide DemiBold', sans-serif;
+}
+
+
+
+
+
+
+
+
